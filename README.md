@@ -2,6 +2,7 @@ featues added -
 
 1. airbnb eslint config, modified code to follow those
 2. editorconfig
+3. Sass
 
 Note - 
 
