@@ -17,8 +17,10 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",
-    "build": "npm-run-all build-css build-js",
-    "test": "react-scripts test --env=jsdom",
+    "build": "CI=true npm-run-all test build-css build-js",
+    "test:lint:js": "eslint --ext=js --ext=jsx .",
+    "test-js": "react-scripts test --env=jsdom",
+    "test": "npm-run-all test:lint:js test-js",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
